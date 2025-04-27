@@ -30,12 +30,27 @@ html,body {
 }
 
 .search-box .search-btn {
-    height: 50px;
-    width: 50px;
-    color: #fff;
     position: absolute;
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
-    background-color: #664aff;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #664aff;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search-box .cancel-btn {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
 }
