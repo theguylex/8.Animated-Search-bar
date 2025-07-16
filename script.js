@@ -6,4 +6,5 @@ const searchInput = document.querySelector("input");
 
 searchBtn.onclick = () => {
     searchBox.classList.toggle("active");
+    searchInput.classList.add("active");
 }
