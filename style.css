@@ -32,7 +32,7 @@ html,body {
     background: #fff;
     font-size: 18px;
     border-radius: 50px;
-    padding: 0 60px 0 40px;
+    padding: 0 20px 0 40px;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -45,6 +45,7 @@ html,body {
     position: absolute;
     top: 50%;
     right: 0px;
+    z-index: 1;
     transform: translateY(-50%);
     height: 60px;
     width: 60px;
@@ -62,14 +63,24 @@ html,body {
     right: 5px;
     height: 50px;
     width: 50px;
+    color: #fff;
+    background: #664aff;
+    line-height: 50px;
+    font-size: 20px;
 }
 
 .search-box .cancel-btn {
     position: absolute;
     top: 50%;
-    right: -40px;
+    right: 20px;
     transform: translateY(-50%);
     color: #fff;
     font-size: 25px;
     cursor: pointer;
+    transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box .cancel-btn.active {
+    right: -40px;
+    transform: translateY(-50%) rotate(360deg);
 }
