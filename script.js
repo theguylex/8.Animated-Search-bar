@@ -10,3 +10,10 @@ searchBtn.onclick = () => {
     searchBtn.classList.add("active");
     cancelBtn.classList.add("active");
 }
+
+cancelBtn.onclick = () => {
+    searchBox.classList.remove("active");
+    searchInput.classList.remove("active");
+    searchBtn.classList.remove("active");
+    cancelBtn.classList.remove("active");
+}
